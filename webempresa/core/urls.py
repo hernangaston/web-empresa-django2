@@ -1,0 +1,11 @@
+from django.urls import path
+
+from . import views as core_views
+
+#FICHERO PARTICULAR DE URLS DE CORE
+
+urlpatterns = [
+	path('', core_views.home, name="home"),
+	path('about/', core_views.about, name="about"),
+	path('store/', core_views.store, name="store"),
+]
